@@ -30,7 +30,7 @@ boxes.forEach((box) => {
       turnO = false;
     } else {
       box.innerText = "X";
-      // box.classList.add("colorX");
+      box.classList.add("colorX");
       turnO = true;
     }
     box.disabled = true;

@@ -45,11 +45,12 @@ const disableBoxes = () => {
     }
 }
 const enableBoxes = () => {
-    for (let box of boxes) {
-        box.disabled = false;
-        box.innerText ="";
-    }
-}
+  for (let box of boxes) {
+    box.disabled = false;
+    box.innerText ="";
+    box.classList.remove("colorO", "colorX");
+  }
+};
 
 const showWinner = (winner) => {
     msg.innerText = `Congratulations, Winner is ${winner}`;
